@@ -1,0 +1,96 @@
+﻿/*Только в товаре*/
+#multlist {
+	width: 15%;
+	float: left;
+	height: 500px;
+	overflow: auto;
+}
+.dim {
+	opacity: 0.3;
+}
+.imgleft {
+	width: 90%;
+	margin: 3px;
+}
+
+#changer {
+	width: 85%;
+	text-align: center;
+	float: right;
+}
+.line {
+	width: 40px;
+}
+#gap {
+	width: 60%;
+}
+.line, #gap {
+	vertical-align: middle;
+	display: inline-block;
+	overflow: hidden;
+}
+.line img{
+	width: 100%;
+}
+#strip {
+	width: 1200px;
+	position: relative;
+	left: 0;
+	text-align: left;
+}
+#strip  img {
+	vertical-align: middle;
+	height: 100px;
+}
+#changer img:hover {
+	opacity: 1.0;
+}
+
+#item {
+	width: 75%;
+	padding: 0 5%;
+	clear: right;
+	text-align: center;
+	overflow: hidden;
+}
+h1 {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	text-align: center;
+	color: #00aa00;	
+}
+
+#big {
+	width: 55%;
+	float: left;
+	margin: 0 5% 0 15%;
+}
+#big img {
+	width: 100%;
+}
+#small {
+	width: 5%;
+	overflow: hidden;
+	text-align: center;
+}
+#small img {
+	width: 80%;
+	padding: 0 0 5px;
+}
+
+#item table td:nth-of-type(even) {
+	text-align: left;
+}
+#item table td:nth-of-type(odd) {
+	color: #005555;
+	font-size: 125%;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: right;
+} 
+#item form {
+	text-align: left;
+}
+
+#footer {
+	clear: both;
+}

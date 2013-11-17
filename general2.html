@@ -1,0 +1,107 @@
+﻿</head>
+<body>
+
+<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript'>
+	$(document).ready(function() {
+	
+		var quantity = $("#pic img").length - 4;
+		
+		var arrimg = new Array(quantity);
+		for (var i=0; i < quantity; i++) arrimg[i] = $("#trumpy img").eq(i);
+
+		var count = quantity;
+		var k = 0;
+
+		function shifttostart() {
+			$("#pic").css("left", "0");
+			shift = parseInt($("#pic").css("left"));
+			return shift;
+		}
+		
+		function show() {
+			var elem = $("#pic");
+			var w = $("#pic img").width();
+			var shift = parseInt(elem.css("left")) - w - 2;
+			if (count < quantity) count++;
+			else {
+				count = 1;
+				shift = shifttostart() - w - 2;
+			}
+			elem.stop().animate({left: shift}, 300);
+			var dim = k % quantity;
+			var undim = (k + 4) % quantity;
+			arrimg[dim].toggleClass("dim");
+			arrimg[undim].toggleClass("dim");
+			k++;
+		}
+		
+		$("#go").click(show);
+		var id = setInterval(show, 5000);
+
+	})
+</script>
+
+
+	<div id='overheader'>
+		<div id='wndw'>
+			<div id='pic'>	<!-- Карусель. В конце добавлено столько рисунков, сколько показывается за один раз -->
+				<a href='toyitem.php'><img class='slide' src='pictures/pic1.jpg' alt='Бычара' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic2.jpg' alt='Птица-говорун' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic3.jpg' alt='Волк' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic4.jpg' alt='Буратино' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic5.jpg' alt='Кентавр' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic6.jpg' alt='Чебурашка' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic7.jpg' alt='Сын плотника' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic8.jpg' alt='Крыс' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic9.jpg' alt='Кошка Путина' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic10.jpg' alt='Аниматор' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic11.jpg' alt='Книга' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic12.jpg' alt='Трио' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic1.jpg' alt='Бычара - 2' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic2.jpg' alt='Птица-говорун - 2' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic3.jpg' alt='Волк - 2' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic4.jpg' alt='Буратино - 2' /></a>
+			</div>
+		</div>
+		<div id='bottom'>
+			<div id='next'>	<!-- Кнопка слева от карусели для ускорения прокрутки -->
+				<img id='go' src='pictures/arrowleft.png' alt='Далее' />
+			</div>
+			<div id='trumpy'>	<!-- В нижней галерее будут все рисунки из карусели -->
+				<a href='toyitem.php'><img src='pictures/pic1.jpg' alt='Бычара' /></a>
+				<a href='toyitem.php'><img src='pictures/pic2.jpg' alt='Птица-говорун' /></a>
+				<a href='toyitem.php'><img src='pictures/pic3.jpg' alt='Волк' /></a>
+				<a href='toyitem.php'><img src='pictures/pic4.jpg' alt='Буратино' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic5.jpg' alt='Кентавр' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic6.jpg' alt='Чебурашка' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic7.jpg' alt='Сын плотника' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic8.jpg' alt='Крыс' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic9.jpg' alt='Кошка Путина' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic10.jpg' alt='Аниматор' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic11.jpg' alt='Книга' /></a>
+				<a href='toyitem.php'><img class='dim' src='pictures/pic12.jpg' alt='Трио' /></a>
+			</div>
+		</div>
+
+	</div>
+	
+	<div id='content'> <!-- Вся остальная страница в одном блоке -->
+	
+		<div id='header'> <!-- Тут будет меню и корзинка -->
+			<table width=100% cellpadding='0' cellspacing='0' border='0' align='center'>
+				<colgroup>
+					<col span='1' />
+					<col width='18%' span='4' />
+					<col span='1' />
+				</colgroup>
+				<tr align='center'>
+					<td><a href='index.php' title='Идём домой'><img src='pictures/izkurnozh.png' alt='Домашняя страничка' /></a></td>
+					<td><a href='catalogue.php' class='menu'>КАТАЛОГ</a></td>
+					<td><a href='delivery.php' class='menu'>О ДОСТАВКЕ</a></td>
+					<td><a href='comments.php' class='menu'>ОТЗЫВЫ</a></td>
+					<td><a href='contacts.php' class='menu'>КОНТАКТЫ</a></td>				
+					<td><a href='order.php' title='Ваша корзина'><img src='pictures/busket.png' alt='Корзина' /></a><span>В корзине <b>"ХХХ"</b> товаров</span></td>
+				</tr>
+			</table>
+		</div>

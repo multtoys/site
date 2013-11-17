@@ -1,0 +1,18 @@
+﻿/*В главном каталоге и во втором уровне*/
+.catp {
+	margin: 5px 0;
+	text-indent: 25px;
+	color: #00aa00;
+	font-size: 160%;
+	font-weight: bold;
+}
+.catp:hover {
+	color: #880000;
+}
+.imgleft {
+	width: 90%;
+	margin: 3px;
+}
+.imgleft:hover {
+	outline: red solid 3px;
+}

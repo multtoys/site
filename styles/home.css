@@ -1,0 +1,39 @@
+﻿/*Только на главной*/
+#search {
+	float: right;
+	width: 30%;
+}
+#search input[type='image'] {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-image: url("../pictures/plutorests.png");
+}
+#search input[type='image']:hover {
+	background-image: url("../pictures/plutoserves.png");
+}
+
+#greeting  {
+	width: 70%;
+	text-align: center;
+}
+#greeting p {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+}
+#greeting span {
+	font-size: 150%;
+	color: #FF0000;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+	font-size: 80%;
+}
+
+#goods img {
+	width: 100%;
+}

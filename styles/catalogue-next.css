@@ -1,0 +1,27 @@
+﻿/*Только во втором уровне каталога*/
+h2 {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	text-align: center;
+	color: #00aa00;
+} 
+#multlist {
+	width: 30%;
+	float: left;
+	height: 500px;
+	overflow: auto;
+}
+.dim {
+	opacity: 0.3;
+}
+#toylist {
+	width: 70%;
+	height: 500px;
+	overflow: auto;
+}
+#toylist img {
+	width: 45%;
+	margin: 5px;
+}
+#toylist img:hover {
+	outline: green solid 2px;
+}

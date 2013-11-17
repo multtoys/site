@@ -1,0 +1,84 @@
+﻿/*Общий для всех*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F2F2F2;
+}
+
+#overheader {
+	max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+#wndw {
+	width: 100%; 
+	overflow: hidden;
+}
+#pic {
+	width: 500%;
+	position: relative;
+	left: 0;
+	text-align: left;
+}
+img{
+	margin: 0 -1px;
+	vertical-align: middle;
+}
+.slide {
+	width: 5%;
+}
+#bottom {
+	width: 100%; 
+}
+#next {
+	width: 7%;
+	float: left;
+}
+#trumpy {
+	float: right;
+	width: 93%;
+	text-align: right;
+}
+#trumpy img {
+	width: 8.1%;
+}
+.dim  {
+	opacity: 0.3;
+}
+#go {
+	width: 100%;
+	opacity: 0.3;
+}
+#go:hover {
+	opacity: 1.0;
+}
+
+#content {
+	max-width: 1100px;
+	margin: 0 auto;
+	clear: both;
+	padding: 10px 0 0;
+}
+
+#header, #footer {
+	margin: 10px auto;
+	background-color: #E5E5E5;
+}
+#header img {
+	vertical-align: middle;
+	height: 40px;
+}
+#header td:hover  {
+	background-color: #CCCCCC;
+}
+#header td span  {
+	margin: 0 0 0 10px;
+}
+.menu {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	font-size: 130%;
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+}

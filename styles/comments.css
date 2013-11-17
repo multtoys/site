@@ -1,0 +1,5 @@
+﻿/*Только в отзывах*/
+#comment p {
+	text-indent: 25px;
+	margin: 0;
+}

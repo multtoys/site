@@ -1,0 +1,111 @@
+﻿		<div id='multlist'>		<!-- Кадр из мультфильма и ссылка на следующий уровень каталога  -->
+			<div>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/madagascar.jpg' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp' class='catp'>Мадагаскар</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/souzmultfilm.jpg' alt='1' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Союзмультфильм</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/iceage.jpg' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Ледниковый период</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/rat.jpg' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Про крыс</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/winie-black.png' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Чёрная кошка</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/winie-dza.png' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Кин-дза-дза</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/winie-gold.png' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Золотой телёнок</p></a>
+			</div>
+			<div class='dim'>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/winie-jentle.png' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Джентльмены удачи</p></a>
+			</div>
+		</div>
+		
+		<div id='changer'>	<!-- Игрушки, соответствующие мультфильму, и ссылки на страницу игрушки  -->
+			<div class='line'>
+				<img id='lft' class='dim' src='pictures/arrowleft.png' alt='Назад' />
+			</div>
+			<div id='gap'>
+				<div id='strip'>
+					<a href='toyitem.php'><img src='pictures/pic27.jpg' title='Pic 27' alt='pic27' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic26.jpg' title='Pic 26' alt='pic26' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic25.jpg' title='Pic 25' alt='pic25' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic28.jpg' title='Pic 28' alt='pic28' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic29.jpg' title='Pic 29' alt='pic29' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic30.jpg' title='Pic 30' alt='pic30' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic31.jpg' title='Pic 31' alt='pic31' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic32.jpg' title='Pic 32' alt='pic32' /></a>
+				</div>
+			</div>
+			<div class='line'>
+				<img id='rgt' class='dim' src='pictures/arrowright.png' alt='Вперёд' />
+			</div>
+		</div>
+		
+<script type='text/javascript'>
+	$(document).ready(function() {
+		var quantity = $("#strip img").length;
+		var step = 0;
+		var maxstep = quantity - 2;
+		
+		function doit(k) {
+			var w = $("#strip img").width();
+			var jump = parseInt($("#strip").css("left"));
+			jump = jump + k*(w + 2);
+			$("#strip").css("left", jump);
+		}
+		
+		function shiftleft() {
+			if (step < maxstep) {
+				var k = -1;
+				doit(k);
+				step++;
+			}
+		}
+		
+		function shiftright() {
+			if (step > 0) {
+				var k = 1;
+				doit(k);
+				step--;
+			}
+		}
+
+		$("#lft").click(shiftleft);
+		$("#rgt").click(shiftright);
+
+	})
+</script>
+		
+		<div id='item'>
+			<h1>Игрушка № 1</h1>
+			<div id='big'>
+				<img src='pictures/pic27.jpg' alt='pic27' />
+			</div>
+			<div id='small'>
+				<img src='pictures//pic27.jpg' alt='pic27' />
+				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
+				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
+				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
+			</div>
+			
+			<table width='75%' border='0' cellspacing='15px' cellpadding='0'>
+				<tr><td style='color: #B00000; font-size: 140%;'>Цена:</td><td style='color: #B00000; font-size: 140%;'>500,00 руб.</td><td>Наличие:</td><td>5 шт.</td></tr>
+				<tr><td></td><td></td><td>Срок исполнения:</td><td>3 рабочих дня.</td></tr>
+				<tr><td>Вес:</td><td>1,5 кг.</td><td>Габариты:</td><td>20 х 30 х 40</td></tr>
+				<tr><td>Материал:</td><td>безвредный.</td><td>Происхождение:</td><td>Китай</td></tr>
+			</table>
+			
+			<form name='to_cart' action='toyitem.php' method='get'>
+				<input type='submit' name='add' value='Добавить в корзину 1 штуку' autofocus />
+			</form>
+			<br />
+			<form name='order' action='order.php' method='post' >
+				<input type='submit' name='to_order' value="В корзине 0 товаров. Оформить заказ" disabled />
+			</form>
+			
+		</div>

@@ -1,0 +1,16 @@
+﻿/*Только в главном каталоге*/
+#multcat {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+#multcat div {
+	width: 100%;
+}
+.imgright {
+	width: 18%;
+	margin: 2px 5px;
+}
+.imgright:hover {
+	outline: green solid 2px;
+}
