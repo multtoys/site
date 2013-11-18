@@ -13,6 +13,9 @@ h2 {
 .dim {
 	opacity: 0.3;
 }
+.dim:hover {
+	opacity: 1.0;
+}
 #toylist {
 	width: 70%;
 	height: 500px;

@@ -3,16 +3,23 @@
 	float: right;
 	width: 30%;
 }
-#search input[type='image'] {
+#search b {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	font-size: 80%;
+	text-decoration: underline;
+	color: #00AA00;
+}
+#pluto {
 	display: inline-block;
 	width: 60px;
 	height: 60px;
-	background-image: url("../pictures/plutorests.png");
 }
-#search input[type='image']:hover {
+/*
+#pluto:hover {
+	opacity: 0.0;
 	background-image: url("../pictures/plutoserves.png");
 }
-
+*/
 #greeting  {
 	width: 70%;
 	text-align: center;

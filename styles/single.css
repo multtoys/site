@@ -8,6 +8,9 @@
 .dim {
 	opacity: 0.3;
 }
+.dim:hover {
+	opacity: 1.0;
+}
 .imgleft {
 	width: 90%;
 	margin: 3px;
@@ -42,10 +45,6 @@
 	vertical-align: middle;
 	height: 100px;
 }
-#changer img:hover {
-	opacity: 1.0;
-}
-
 #item {
 	width: 75%;
 	padding: 0 5%;

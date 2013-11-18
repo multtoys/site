@@ -3,3 +3,8 @@
 	text-indent: 25px;
 	margin: 0;
 }
+.surname {
+	font-size: 130%;
+	color: #009900;
+	font-weight: bold;
+}

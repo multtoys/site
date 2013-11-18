@@ -1,0 +1,41 @@
+﻿/*Только в оформлении заказа*/
+h1 {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	text-align: center;
+	color: #00aa00;	
+}
+#ord {
+	width: 70%;
+	margin: 0 auto;
+}
+#ord table {
+	width: 100%;
+}
+#ord table b {
+	font-size: 130%;
+}
+#ord table img {
+	width: 60%;
+}
+#ord table b {
+	font-size: 130%;
+}
+#ord table td:nth-of-type(even) {
+	text-align: left;
+	color: #550055;
+	font-size: 105%;
+	font-style: italic;
+}
+#ord table td:nth-of-type(odd) {
+	text-align: center;
+	color: #005555;
+	font-size: 125%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#ord input[type='image'] {
+	opacity: 0.4;
+}
+#ord input[type='image']:hover {
+	opacity: 1.0;
+}

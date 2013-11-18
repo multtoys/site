@@ -5,7 +5,7 @@
 <script type='text/javascript'>
 	$(document).ready(function() {
 	
-		var quantity = $("#pic img").length - 4;
+		var quantity = $("#pic img").length - 5;
 		
 		var arrimg = new Array(quantity);
 		for (var i=0; i < quantity; i++) arrimg[i] = $("#trumpy img").eq(i);
@@ -30,7 +30,7 @@
 			}
 			elem.stop().animate({left: shift}, 300);
 			var dim = k % quantity;
-			var undim = (k + 4) % quantity;
+			var undim = (k + 5) % quantity;
 			arrimg[dim].toggleClass("dim");
 			arrimg[undim].toggleClass("dim");
 			k++;
@@ -62,6 +62,7 @@
 				<a href='toyitem.php'><img class='slide' src='pictures/pic2.jpg' alt='Птица-говорун - 2' /></a>
 				<a href='toyitem.php'><img class='slide' src='pictures/pic3.jpg' alt='Волк - 2' /></a>
 				<a href='toyitem.php'><img class='slide' src='pictures/pic4.jpg' alt='Буратино - 2' /></a>
+				<a href='toyitem.php'><img class='slide' src='pictures/pic5.jpg' alt='Кентавр - 2'/></a>
 			</div>
 		</div>
 		<div id='bottom'>
@@ -73,7 +74,7 @@
 				<a href='toyitem.php'><img src='pictures/pic2.jpg' alt='Птица-говорун' /></a>
 				<a href='toyitem.php'><img src='pictures/pic3.jpg' alt='Волк' /></a>
 				<a href='toyitem.php'><img src='pictures/pic4.jpg' alt='Буратино' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic5.jpg' alt='Кентавр' /></a>
+				<a href='toyitem.php'><img src='pictures/pic5.jpg' alt='Кентавр' /></a>
 				<a href='toyitem.php'><img class='dim' src='pictures/pic6.jpg' alt='Чебурашка' /></a>
 				<a href='toyitem.php'><img class='dim' src='pictures/pic7.jpg' alt='Сын плотника' /></a>
 				<a href='toyitem.php'><img class='dim' src='pictures/pic8.jpg' alt='Крыс' /></a>
