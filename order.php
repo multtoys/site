@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('general.html'); //Общий для всех страниц - head
 ?>
 <link rel='stylesheet' type='text/css' href='styles/order.css' />

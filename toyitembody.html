@@ -87,11 +87,24 @@
 				<img src='pictures/pic27.jpg' alt='pic27' />
 			</div>
 			<div id='small'>
-				<img src='pictures//pic27.jpg' alt='pic27' />
-				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
-				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
-				<img class='dim' src='pictures/pic27.jpg' alt='pic27' />
+				<img id='one' src='pictures/pic27.jpg' alt='pic27' onclick='change("#one")' />
+				<img id='two' class='dim' src='pictures/pic27-sight2.jpg' alt='pic27-sight2' onclick='change("#two")' />
+				<img id='three' class='dim' src='pictures/pic27-sight3.jpg' alt='pic27-sight3' onclick='change("#three")' />
+				<img id='four' class='dim' src='pictures/pic27-sight4.jpg' alt='pic27-sight4' onclick='change("#four")' />
 			</div>
+
+<script type='text/javascript'>
+		function change(id) {
+			var sight = $(id);
+			var smallpic = sight.attr("src");
+			var bigpic = $("#big img").eq(0).attr("src");
+				if (smallpic != bigpic) {
+					$("#big img").eq(0).attr("src", smallpic);
+					$("#small img").addClass("dim");
+					sight.removeClass("dim");
+				}
+		}
+</script>
 			
 			<table width='75%' border='0' cellspacing='15px' cellpadding='0'>
 				<tr><td style='color: #B00000; font-size: 140%;'>Цена:</td><td style='color: #B00000; font-size: 140%;'>500,00 руб.</td><td>Наличие:</td><td>5 шт.</td></tr>
