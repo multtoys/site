@@ -9,12 +9,7 @@ require_once('general.html'); //Общий для всех страниц - head
 <?php
 
 require_once('general2.html'); //Общий для всех страниц - overheader and header
-echo <<<ITEMN
-					<td><a href='order.php' title='Ваша корзина'><img src='pictures/busket.png' alt='Корзина' /></a><span>В корзине <b>$n_item</b> товаров</span></td>
-				</tr>
-			</table>
-		</div>
-ITEMN;
+require_once('basket.php'); //Общий для всех страниц - вход в корзину
 require_once('toyitembody.html'); 		//Только для страницы с игрушкой
 require_once('general3.html'); //Общий для всех страниц - footer
 

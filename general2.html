@@ -1,17 +1,28 @@
-﻿</head>
+</head>
 <body>
 
 <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
 <script type='text/javascript'>
 	$(document).ready(function() {
 	
-		var quantity = $("#pic img").length - 5;
-		
-		var arrimg = new Array(quantity);
-		for (var i=0; i < quantity; i++) arrimg[i] = $("#trumpy img").eq(i);
-
-		var count = quantity;
-		var k = 0;
+		var wow = $("#wndw").width();
+		var woi = 70;
+		var quantity = $("#pic img").length;
+		wow = wow - (wow % woi);
+		var ni = wow / woi
+		if (quantity <= ni) {
+			wow = quantity * woi;
+			$("#wndw").width(wow - 2);
+			$("#pic").width(wow + woi);
+		}
+		else {
+			$("#wndw").width(wow - 2);
+			var wop = woi * (quantity + ni + 1);
+			$("#pic").width(wop);
+			for (var i = 0; i < ni; i++) $("#pic a").eq(i).clone(true).addClass("wider").appendTo("#pic");
+			var count = quantity;
+			var id = setInterval(show, 3000);
+		}
 
 		function shifttostart() {
 			$("#pic").css("left", "0");
@@ -21,70 +32,47 @@
 		
 		function show() {
 			var elem = $("#pic");
-			var w = $("#pic img").width();
-			var shift = parseInt(elem.css("left")) - w - 2;
+			var shift = parseInt(elem.css("left")) - woi;
 			if (count < quantity) count++;
 			else {
 				count = 1;
-				shift = shifttostart() - w - 2;
+				shift = shifttostart() - woi;
 			}
-			elem.stop().animate({left: shift}, 300);
-			var dim = k % quantity;
-			var undim = (k + 5) % quantity;
-			arrimg[dim].toggleClass("dim");
-			arrimg[undim].toggleClass("dim");
-			k++;
+			elem.stop().animate({left: shift}, 200);
 		}
-		
-		$("#go").click(show);
-		var id = setInterval(show, 5000);
-
+	
 	})
 </script>
 
-
 	<div id='overheader'>
 		<div id='wndw'>
-			<div id='pic'>	<!-- Карусель. В конце добавлено столько рисунков, сколько показывается за один раз -->
-				<a href='toyitem.php'><img class='slide' src='pictures/pic1.jpg' alt='Бычара' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic2.jpg' alt='Птица-говорун' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic3.jpg' alt='Волк' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic4.jpg' alt='Буратино' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic5.jpg' alt='Кентавр' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic6.jpg' alt='Чебурашка' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic7.jpg' alt='Сын плотника' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic8.jpg' alt='Крыс' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic9.jpg' alt='Кошка Путина' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic10.jpg' alt='Аниматор' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic11.jpg' alt='Книга' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic12.jpg' alt='Трио' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic1.jpg' alt='Бычара - 2' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic2.jpg' alt='Птица-говорун - 2' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic3.jpg' alt='Волк - 2' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic4.jpg' alt='Буратино - 2' /></a>
-				<a href='toyitem.php'><img class='slide' src='pictures/pic5.jpg' alt='Кентавр - 2'/></a>
+			<div id='pic'>	<!-- Карусель. В конце динамически добавляется столько рисунков, сколько показывается за один раз -->
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic1.jpg' alt='Бычара' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic2.jpg' alt='Птица-говорун' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic3.jpg' alt='Волк' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic4.jpg' alt='Буратино' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic5.jpg' alt='Кентавр' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic6.jpg' alt='Чебурашка' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic7.jpg' alt='Сын плотника' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic8.jpg' alt='Крыс' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic9.jpg' alt='Кошка Путина' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic10.jpg' alt='Аниматор' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic11.jpg' alt='Книга' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic12.jpg' alt='Трио' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic21.jpg' alt='Pic21' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic22.jpg' alt='Pic22' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic23.jpg' alt='Pic23' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic24.jpg' alt='Pic24' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic25.jpg' alt='Pic25' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic26.jpg' alt='Pic26' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic27.jpg' alt='Pic27' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic28.jpg' alt='Pic28' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic29.jpg' alt='Pic29' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic20.jpg' alt='Pic20' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic30.jpg' alt='Pic30' /></a>
+				<a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic31.jpg' alt='Pic31' /></a>
 			</div>
 		</div>
-		<div id='bottom'>
-			<div id='next'>	<!-- Кнопка слева от карусели для ускорения прокрутки -->
-				<img id='go' src='pictures/arrowleft.png' alt='Далее' />
-			</div>
-			<div id='trumpy'>	<!-- В нижней галерее будут все рисунки из карусели -->
-				<a href='toyitem.php'><img src='pictures/pic1.jpg' alt='Бычара' /></a>
-				<a href='toyitem.php'><img src='pictures/pic2.jpg' alt='Птица-говорун' /></a>
-				<a href='toyitem.php'><img src='pictures/pic3.jpg' alt='Волк' /></a>
-				<a href='toyitem.php'><img src='pictures/pic4.jpg' alt='Буратино' /></a>
-				<a href='toyitem.php'><img src='pictures/pic5.jpg' alt='Кентавр' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic6.jpg' alt='Чебурашка' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic7.jpg' alt='Сын плотника' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic8.jpg' alt='Крыс' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic9.jpg' alt='Кошка Путина' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic10.jpg' alt='Аниматор' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic11.jpg' alt='Книга' /></a>
-				<a href='toyitem.php'><img class='dim' src='pictures/pic12.jpg' alt='Трио' /></a>
-			</div>
-		</div>
-
 	</div>
 	
 	<div id='content'> <!-- Вся остальная страница в одном блоке -->
@@ -92,13 +80,13 @@
 		<div id='header'> <!-- Тут будет меню и корзинка -->
 			<table width=100% cellpadding='0' cellspacing='0' border='0' align='center'>
 				<colgroup>
-					<col span='1' />
+					<col width='5%' span='1' />
 					<col width='18%' span='4' />
 					<col span='1' />
 				</colgroup>
 				<tr align='center'>
-					<td><a href='index.php' title='Идём домой'><img src='pictures/izkurnozh.png' alt='Домашняя страничка' /></a></td>
-					<td><a href='catalogue.php' class='menu'>КАТАЛОГ</a></td>
-					<td><a href='delivery.php' class='menu'>О ДОСТАВКЕ</a></td>
-					<td><a href='comments.php' class='menu'>ОТЗЫВЫ</a></td>
-					<td><a href='contacts.php' class='menu'>КОНТАКТЫ</a></td>				
+					<td><a href='index.php' title='Идём домой'><img height='34px' width='34px' src='pictures/home.png' alt='Домашняя страничка' /></a></td>
+					<td><a href='catalogue.php' height='70px' width='70px' class='menu'>КАТАЛОГ</a></td>
+					<td><a href='delivery.php' height='70px' width='70px' class='menu'>О ДОСТАВКЕ</a></td>
+					<td><a href='comments.php' height='70px' width='70px' class='menu'>ОТЗЫВЫ</a></td>
+					<td><a href='contacts.php' height='70px' width='70px' class='menu'>КОНТАКТЫ</a></td>				

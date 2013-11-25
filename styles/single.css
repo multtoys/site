@@ -2,8 +2,24 @@
 #multlist {
 	width: 15%;
 	float: left;
-	height: 500px;
+	height: 992px;
 	overflow: auto;
+}
+#multlist div {
+	text-align: center;
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+}
+.catp {
+	margin: 0;
+	text-indent: 10px;
+	color: #00aa00;
+	font-size: 105%;
+	font-weight: bold;
+}
+.catp:hover {
+	color: #880000;
 }
 .dim {
 	opacity: 0.3;
@@ -12,20 +28,28 @@
 	opacity: 1.0;
 }
 .imgleft {
-	width: 90%;
-	margin: 3px;
+	width: 83%;
+	margin: 0 -1px 0 0;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
 }
-
+.imgleft:hover {
+	border-color: green;
+}
 #changer {
-	width: 85%;
+	margin: 0 auto;
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
 	text-align: center;
-	float: right;
+	max-width: 522px;
+	overflow: hidden;
 }
 .line {
 	width: 40px;
 }
 #gap {
-	width: 60%;
+	width: 432px;
 }
 .line, #gap {
 	vertical-align: middle;
@@ -43,7 +67,8 @@
 }
 #strip  img {
 	vertical-align: middle;
-	height: 100px;
+	height: 60px;
+	margin: 0 -1px;
 }
 #item {
 	width: 75%;
@@ -61,21 +86,32 @@ h1 {
 #big {
 	width: 55%;
 	float: left;
-	margin: 0 5% 0 15%;
+	margin: 0 8% 3% 15%;
 }
 #big img {
 	width: 100%;
+	border: 20px solid #FDFDFD;
+	border-radius: 20px;
+
 }
 #small {
-	width: 5%;
+	width: 5.5%;
 	overflow: hidden;
 	text-align: center;
+	background-color: #FDFDFD;
+	border: 5px solid #FDFDFD;
+	border-radius: 5px;
 }
 #small img {
 	width: 80%;
-	padding: 0 0 5px;
+	margin: 2px;
 }
 
+#item table {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+}
 #item table td:nth-of-type(even) {
 	text-align: left;
 }
@@ -88,6 +124,7 @@ h1 {
 } 
 #item form {
 	text-align: left;
+	margin: 0 0 0 12%;
 }
 
 #footer {

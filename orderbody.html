@@ -1,70 +1,67 @@
-﻿		<div id='ord'> <!-- Оформление заказа -->
-			<h1>Оформление заказа:</h1>
+﻿	<div id='ord'> <!-- Оформление заказа -->
+		<h1>Оформление заказа</h1>
 
-			<form name='ordering' action='order-proceed.php' method='post'>
-				<table cellpadding='2px' cellspacing='0' frame='border'>
-					<colgroup>
-						<col width='80px' span='1' />
-					</colgroup>
-					<tr>
-						<td colspan='6' align='center'><b>Ваш выбор:</b></td>
-					</tr>
-					<tr>
-						<td><img src='pictures/pic6.jpg' alt='Рис 6' /></td>
-						<td>Игрушка № 6</td>
-						<td>Количество:</td>
-						<td>2</td>
-						<td>Цена:</td>
-						<td>500 руб.</td>
-					</tr>
-					<tr>
-						<td><img src='pictures/pic27.jpg' alt='Рис 27' /></td>
-						<td>Игрушка № 27</td>
-						<td>Количество:</td>
-						<td>3</td>
-						<td>Цена:</td>
-						<td>700 руб.</td>
-					</tr>
-					<tr>
-						<td colspan='5' align='right'><b>Итого:</b></td>
-						<td><b>3100 руб.</b></td>
-					</tr>
-				</table>
-				<br />
-				<table cellpadding='2px' cellspacing='0' frame='border'>
-					<tr>
-						<td colspan='2' align='center'><b>Информация о покупателе:</b></td>
-					</tr>
-					<tr>
-						<td>Как Вас величать:</td>
-						<td><input type='text' name='name' value='' size='59' /></td>
-					</tr>
-					<tr>
-						<td>Ваш телефон:</td>
-						<td><input type='text' name='phone' value='' size='59' /></td>
-					</tr>
-					<tr>
-						<td>Ваш e-mail:</td>
-						<td><input type='text' name='email' value='' size='59' /></td>
-					</tr>
-					<tr>
-						<td>Адрес доставки:</td>
-						<td><input type='text' name='addr' value='' size='59' /></td>
-					</tr>
-					<tr>
-						<td>Время доставки:</td>
-						<td><input type='text' name='time' value='' size='59' /></td>
-					</tr>
-					<tr>
-						<td>Дополнительная информация:</td>
-						<td><textarea name='extra' value='' cols='45' rows='4'></textarea></td>
-					</tr>
-					<tr height='45px' valign='bottom'>
-						<td colspan='2' align='center'>
-							<input type='image' name='order' src='pictures/confirmorder2.png' />
-						</td>
-					</tr>
-				</table>
-			</form>
-			<br /><br />
-		</div>
+		<form name='ordering' action='order-proceed.php' method='post'>
+			<table cellpadding='5px' cellspacing='0' frame='border' align='center'>
+				<colgroup>
+					<col width='80px' span='1' />
+				</colgroup>
+				<tr>
+					<td colspan='4' align='center'><b>Ваш выбор</b></td>
+				</tr>
+				<tr>
+					<td class='td2'><img src='pictures/pic6.jpg' alt='Рис 6' /></td>
+					<td class='td1'>Игрушка № 6</td>
+					<td class='td2'>2 шт.</td>
+					<td class='td2'>500 руб.</td>
+				</tr>
+				<tr>
+					<td class='td2'><img src='pictures/pic27.jpg' alt='Рис 27' /></td>
+					<td class='td1'>Игрушка № 27</td>
+					<td class='td2'>3 шт.</td>
+					<td class='td2'>700 руб.</td>
+				</tr>
+				<tr>
+					<td colspan='3' align='right'><b>Итого</b></td>
+					<td class='td2'><b>3100 руб.</b></td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding='2px' cellspacing='0' frame='border'  align='center'>
+				<tr>
+					<td colspan='2' align='center'><b>Информация о покупателе</b></td>
+				</tr>
+				<tr>
+					<td class='td1'>Как Вас величать</td>
+					<td><input type='text' name='name' value='' size='59' /></td>
+				</tr>
+				<tr>
+					<td class='td1'>Ваш телефон</td>
+					<td><input type='text' name='phone' value='' size='59' /></td>
+				</tr>
+				<tr>
+					<td class='td1'>Ваш e-mail</td>
+					<td><input type='text' name='email' value='' size='59' /></td>
+				</tr>
+				<tr>
+					<td class='td1'>Адрес доставки</td>
+					<td><input type='text' name='addr' value='' size='59' /></td>
+				</tr>
+				<tr>
+					<td class='td1'>Время доставки</td>
+					<td><input type='text' name='time' value='' size='59' /></td>
+				</tr>
+				<tr>
+					<td class='td1'>Дополнительная<br />информация</td>
+					<td><textarea name='extra' value='' cols='45' rows='4'></textarea></td>
+				</tr>
+				<tr height='45px' valign='bottom'>
+					<td colspan='2' align='center'>
+						<input type='image' name='order' src='pictures/confirmorder2.png' />
+					</td>
+				</tr>
+			</table>
+		</form>
+		<br /><br />
+	</div>
+	<div>

@@ -5,10 +5,27 @@ h2 {
 	color: #00aa00;
 } 
 #multlist {
-	width: 30%;
+	width: 15%;
 	float: left;
-	height: 500px;
+	height: 568px;
 	overflow: auto;
+}
+#multlist div {
+	text-align: center;
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+}
+.catp {
+	margin: 0;
+	text-indent: 10px;
+	color: #00aa00;
+	font-size: 105%;
+	font-weight: bold;
+}
+#multtoys {
+	width: 85%;
+	overflow: hidden;
 }
 .dim {
 	opacity: 0.3;
@@ -16,15 +33,29 @@ h2 {
 .dim:hover {
 	opacity: 1.0;
 }
+#toynails {
+	margin: 0 auto 1.2%;
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+	text-align: center;
+	max-width: 641px;
+}
+#toynails img {
+	width: 35px;
+	margin: 0 0.1% 0.2%;
+}
 #toylist {
-	width: 70%;
+	width: 100%;
 	height: 500px;
 	overflow: auto;
 }
 #toylist img {
-	width: 45%;
-	margin: 5px;
+	width: 20.5%;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+	margin: 0 0 1.2% 0.9%;
 }
 #toylist img:hover {
-	outline: green solid 2px;
+	border-color: green;
 }

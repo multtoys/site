@@ -1,88 +1,80 @@
 ﻿/*Общий для всех*/
 body {
-	margin: -20px 0;
+	margin: 0;
 	padding: 0;
-	background-color: #F2F2F2;
+	background-color: #B3FFB3;
 }
 
 #overheader {
-	max-width: 900px;
-	width: 80%;
+	max-width: 1080px;
 	margin: 0 auto;
 	text-align: center;
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
 }
 #wndw {
 	width: 100%; 
 	overflow: hidden;
+	margin: 0 auto;
 }
 #pic {
-	width: 500%;
+	width: 4200px;
 	position: relative;
 	left: 0;
 	text-align: left;
 }
 img{
-	margin: 0 -1px;
+	margin: 0 -2px;
 	vertical-align: middle;
 }
-img:hover {
+img:hover, .dim:hover {
 	opacity: 1.0;
 }
-.slide {
-	width: 4%;
-}
-#bottom {
-	width: 100%; 
-}
-#next {
-	width: 3%;
-	float: left;
-}
-#trumpy {
-	float: right;
-	width: 96%;
-	text-align: right;
-}
-#trumpy img {
-	width: 3.5%;
-	margin: 0 0 0 4.3%;
+.wider img {
+	margin: 0;
 }
 .dim  {
 	opacity: 0.3;
-}
-#go {
-	width: 100%;
-	opacity: 0.3;
-}
-#go:hover {
-	opacity: 1.0;
 }
 
 #content {
 	max-width: 1100px;
 	margin: 0 auto;
 	clear: both;
-	padding: 10px 0 0;
 }
 
 #header, #footer {
-	margin: 10px auto;
-	background-color: #E5E5E5;
+	margin: 7px auto;
+	background-color: #9ADD9A;
+	border: 1px solid #9ADD9A;
+	border-radius: 10px;
 }
 #header img {
 	vertical-align: middle;
-	height: 40px;
+	margin: 3px 0;
+}
+#header td {
+	border: 1px solid #9ADD9A;
+	border-radius: 10px;
 }
 #header td:hover  {
-	background-color: #CCCCCC;
+	background-color: #77BB77;
+	border: 1px solid #77BB77;
+	border-radius: 10px;
 }
 #header td span  {
 	margin: 0 0 0 10px;
 }
-.menu {
+.menu, #inmenu , #footer {
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	font-size: 130%;
 	text-decoration: none;
 	color: #333333;
+}
+.menu {
+	font-size: 130%;
 	font-weight: bold;
+}
+#inmenu , #footer {
+	vertical-align: middle;
 }

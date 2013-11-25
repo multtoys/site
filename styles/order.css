@@ -4,15 +4,27 @@ h1 {
 	text-align: center;
 	color: #00aa00;	
 }
+#back {
+	position: fixed;
+	left: 7px;
+	top: 7px;
+	padding: 1px 7px;
+	background-color: #909090;
+	border: 3px ridge #5A5A5A;
+	border-radius: 10px;
+}
+#back a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 120%;
+	font-weight: bold;
+}
 #ord {
 	width: 70%;
 	margin: 0 auto;
 }
-#ord table {
-	width: 100%;
-}
 #ord table b {
-	font-size: 130%;
+	font-size: 150%;
 }
 #ord table img {
 	width: 60%;
@@ -20,13 +32,13 @@ h1 {
 #ord table b {
 	font-size: 130%;
 }
-#ord table td:nth-of-type(even) {
+.td1 {
 	text-align: left;
 	color: #550055;
 	font-size: 105%;
 	font-style: italic;
 }
-#ord table td:nth-of-type(odd) {
+.td2 {
 	text-align: center;
 	color: #005555;
 	font-size: 125%;

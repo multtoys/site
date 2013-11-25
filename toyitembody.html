@@ -3,7 +3,7 @@
 				<a href='catalogue-next.php'><img class='imgleft' src='pictures/madagascar.jpg' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp' class='catp'>Мадагаскар</p></a>
 			</div>
 			<div class='dim'>
-				<a href='catalogue-next.php'><img class='imgleft' src='pictures/souzmultfilm.jpg' alt='1' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Союзмультфильм</p></a>
+				<a href='catalogue-next.php'><img class='imgleft' src='pictures/souzmultfilm.jpg' alt='1' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Союз- мультфильм</p></a>
 			</div>
 			<div class='dim'>
 				<a href='catalogue-next.php'><img class='imgleft' src='pictures/iceage.jpg' alt='2' /></a><a href='catalogue-next.php' style='text-decoration: none;'><p class='catp'>Ледниковый период</p></a>
@@ -39,6 +39,14 @@
 					<a href='toyitem.php'><img class='dim' src='pictures/pic30.jpg' title='Pic 30' alt='pic30' /></a>
 					<a href='toyitem.php'><img class='dim' src='pictures/pic31.jpg' title='Pic 31' alt='pic31' /></a>
 					<a href='toyitem.php'><img class='dim' src='pictures/pic32.jpg' title='Pic 32' alt='pic32' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic27.jpg' title='Pic 27-2' alt='pic27-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic26.jpg' title='Pic 26-2' alt='pic26-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic25.jpg' title='Pic 25-2' alt='pic25-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic28.jpg' title='Pic 28-2' alt='pic28-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic29.jpg' title='Pic 29-2' alt='pic29-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic30.jpg' title='Pic 30-2' alt='pic30-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic31.jpg' title='Pic 31-2' alt='pic31-2' /></a>
+					<a href='toyitem.php'><img class='dim' src='pictures/pic32.jpg' title='Pic 32-2' alt='pic32-2' /></a>
 				</div>
 			</div>
 			<div class='line'>
@@ -50,7 +58,7 @@
 	$(document).ready(function() {
 		var quantity = $("#strip img").length;
 		var step = 0;
-		var maxstep = quantity - 2;
+		var maxstep = quantity - 5;
 		
 		function doit(k) {
 			var w = $("#strip img").width();
@@ -106,15 +114,16 @@
 		}
 </script>
 			
-			<table width='75%' border='0' cellspacing='15px' cellpadding='0'>
+			<table width='75%' border='0' cellspacing='15px' cellpadding='0' align='center'>
 				<tr><td style='color: #B00000; font-size: 140%;'>Цена:</td><td style='color: #B00000; font-size: 140%;'>500,00 руб.</td><td>Наличие:</td><td>5 шт.</td></tr>
 				<tr><td></td><td></td><td>Срок исполнения:</td><td>3 рабочих дня.</td></tr>
 				<tr><td>Вес:</td><td>1,5 кг.</td><td>Габариты:</td><td>20 х 30 х 40</td></tr>
 				<tr><td>Материал:</td><td>безвредный.</td><td>Происхождение:</td><td>Китай</td></tr>
 			</table>
+			<br />
 			
 			<form name='to_cart' action='toyitem.php' method='get'>
-				<input type='submit' name='add' value='Добавить в корзину 1 штуку' autofocus />
+				<input type='submit' name='add' value='Добавить в корзину 1 штуку' />
 			</form>
 			<br />
 			<form name='order' action='order.php' method='post' >

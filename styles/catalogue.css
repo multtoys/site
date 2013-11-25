@@ -8,9 +8,21 @@
 	width: 100%;
 }
 .imgright {
-	width: 18%;
-	margin: 2px 5px;
+	margin: 0 2.7% 2%;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
 }
 .imgright:hover {
-	outline: green solid 2px;
+	border-color: green;
+}
+.catp {
+	margin: 5px 0;
+	text-indent: 15px;
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	color: #656565;
+	font-size: 130%;
+	font-weight: bold;
+}
+.catp:hover {
+	color: green;
 }
