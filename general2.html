@@ -4,26 +4,52 @@
 <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
 <script type='text/javascript'>
 	$(document).ready(function() {
-	
-		var wow = $("#wndw").width();
 		var woi = 70;
 		var quantity = $("#pic img").length;
-		wow = wow - (wow % woi);
-		var ni = wow / woi
-		if (quantity <= ni) {
-			wow = quantity * woi;
-			$("#wndw").width(wow - 2);
-			$("#pic").width(wow + woi);
+		var wow;
+		var k = 0;
+		var count;
+		var ni = 0;
+		var woh = 0;
+		var id = setInterval(slider, 3000);
+		
+		function slider() {
+			if (woh != $("#overheader").width()) {
+				var last = $("#pic a").length - 1;
+				for (var i = last; i > (last - ni); i--) $("#pic a").eq(i).remove();
+				woh = $("#overheader").width();
+				wow = woh - 20;
+				wow = wow - (wow % woi);
+				ni = wow / woi;
+				if (quantity <= ni) {
+					wide();
+				}
+				else {
+					narrow();
+					show();
+				}
+			}
+			if (k == 1) show();
 		}
-		else {
-			$("#wndw").width(wow - 2);
+	
+		function wide() {
+			wow = quantity * woi;
+			wow = wow - 2;
+			$("#wndw").width(wow);
+			$("#pic").width(wow + woi);
+			k = 0;
+		}
+		
+		function narrow() {
+			wow = wow - 2;
+			$("#wndw").width(wow);
 			var wop = woi * (quantity + ni + 1);
 			$("#pic").width(wop);
 			for (var i = 0; i < ni; i++) $("#pic a").eq(i).clone(true).addClass("wider").appendTo("#pic");
-			var count = quantity;
-			var id = setInterval(show, 3000);
+			count = quantity;
+			k = 1;
 		}
-
+		
 		function shifttostart() {
 			$("#pic").css("left", "0");
 			shift = parseInt($("#pic").css("left"));
