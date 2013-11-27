@@ -44,6 +44,7 @@
 
 #goods td {
 	text-align: center;
+	padding: 6px;
 }
 #goods img {
 	border: 10px solid #FDFDFD;
