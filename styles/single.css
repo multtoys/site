@@ -1,8 +1,7 @@
 ﻿/*Только в товаре*/
 #multlist {
-	width: 15%;
 	float: left;
-	height: 992px;
+	height: 970px;
 	overflow: auto;
 }
 #multlist div {
@@ -10,118 +9,102 @@
 	background-color: #FDFDFD;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
+	margin: 0 5px 5px 0;
+}
+.catp, h1, .bg td {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	color: #656565;
 }
 .catp {
-	margin: 0;
-	text-indent: 10px;
-	color: #00aa00;
-	font-size: 105%;
 	font-weight: bold;
+	margin: 0;
+	font-size: 105%;
 }
 .catp:hover {
-	color: #880000;
-}
-.dim {
-	opacity: 0.3;
-}
-.dim:hover {
-	opacity: 1.0;
+	color: green;
 }
 .imgleft {
-	width: 83%;
 	margin: 0 -1px 0 0;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
 }
-.imgleft:hover {
+.imgleft:hover, #big:hover {
 	border-color: green;
 }
+
 #changer {
-	margin: 0 auto;
+	margin: 0 0 8px 204px;
 	background-color: #FDFDFD;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
 	text-align: center;
-	max-width: 522px;
 	overflow: hidden;
-}
-.line {
-	width: 40px;
 }
 #gap {
-	width: 432px;
-}
-.line, #gap {
-	vertical-align: middle;
-	display: inline-block;
+	height: 70px;
 	overflow: hidden;
-}
-.line img{
-	width: 100%;
-}
-#strip {
-	width: 1200px;
-	position: relative;
-	left: 0;
-	text-align: left;
-}
-#strip  img {
-	vertical-align: middle;
-	height: 60px;
-	margin: 0 -1px;
-}
-#item {
-	width: 75%;
-	padding: 0 5%;
-	clear: right;
-	text-align: center;
-	overflow: hidden;
-}
-h1 {
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	text-align: center;
-	color: #00aa00;	
 }
 
-#big {
-	width: 55%;
-	float: left;
-	margin: 0 8% 3% 15%;
+#item {
+	padding: 0 5%;
+	text-align: center;
+	overflow: hidden;
 }
-#big img {
-	width: 100%;
+
+h1 {
+	text-align: center;
+}
+
+.bg td {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+}
+#big {
 	border: 20px solid #FDFDFD;
 	border-radius: 20px;
-
+	margin: 0 0 10px;
 }
 #small {
-	width: 5.5%;
-	overflow: hidden;
 	text-align: center;
 	background-color: #FDFDFD;
 	border: 5px solid #FDFDFD;
 	border-radius: 5px;
+	width: 80px;
 }
 #small img {
-	width: 80%;
-	margin: 2px;
+	margin: 2px 0;
+}
+#topleft {
+	border-radius: 10px 0 0 0;
+}
+#topright {
+	border-radius: 0 10px 0 0;
+}
+#bottomleft {
+	border-radius: 0 0 0 10px;
+}
+#bottomright {
+	border-radius: 0 0 10px 0;
 }
 
-#item table {
-	background-color: #FDFDFD;
-	border: 10px solid #FDFDFD;
-	border-radius: 10px;
-}
 #item table td:nth-of-type(even) {
 	text-align: left;
 }
 #item table td:nth-of-type(odd) {
 	color: #005555;
-	font-size: 125%;
+	font-size: 115%;
 	text-decoration: underline;
 	font-weight: bold;
-	text-align: right;
-} 
+	text-align: left;
+}
+ #price {
+	color: #B0257E;
+	font-size: 135%;
+	font-weight: bold;
+ }
+ 
+ 
+ 
 #item form {
 	text-align: left;
 	margin: 0 0 0 12%;

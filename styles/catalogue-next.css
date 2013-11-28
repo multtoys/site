@@ -5,9 +5,8 @@ h2 {
 	color: #00aa00;
 } 
 #multlist {
-	width: 15%;
 	float: left;
-	height: 568px;
+	height: 585px;
 	overflow: auto;
 }
 #multlist div {
@@ -15,46 +14,44 @@ h2 {
 	background-color: #FDFDFD;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
+	margin: 0 5px 5px 0;
 }
 .catp {
-	margin: 0;
-	text-indent: 10px;
-	color: #00aa00;
-	font-size: 105%;
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	color: #656565;
 	font-weight: bold;
+	margin: 0;
+	font-size: 105%;
+}
+.catp:hover {
+	color: green;
 }
 #multtoys {
-	width: 85%;
 	overflow: hidden;
 }
-.dim {
-	opacity: 0.3;
-}
-.dim:hover {
-	opacity: 1.0;
-}
-#toynails {
-	margin: 0 auto 1.2%;
+
+#changer {
+	margin: 0 0 8px 5px;
 	background-color: #FDFDFD;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
 	text-align: center;
-	max-width: 641px;
+	overflow: hidden;
 }
-#toynails img {
-	width: 35px;
-	margin: 0 0.1% 0.2%;
+#gap {
+	height: 70px;
+	overflow: hidden;
 }
+
 #toylist {
 	width: 100%;
-	height: 500px;
+	height: 484px;
 	overflow: auto;
 }
 #toylist img {
-	width: 20.5%;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
-	margin: 0 0 1.2% 0.9%;
+	margin: 0 0 8px 5px;
 }
 #toylist img:hover {
 	border-color: green;
