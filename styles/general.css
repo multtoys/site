@@ -4,6 +4,11 @@ body {
 	padding: 0;
 	background-color: #B3FFB3;
 }
+h1, h2, h3, h4 {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	text-align: center;
+	color: #656565;
+}
 
 #overheader {
 	max-width: 1080px;
@@ -28,7 +33,7 @@ img{
 	margin: 0 -2px;
 	vertical-align: middle;
 }
-img:hover, .dim:hover {
+.dim:hover {
 	opacity: 1.0;
 }
 .wider img {

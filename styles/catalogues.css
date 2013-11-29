@@ -7,3 +7,11 @@
 .imgleft:hover {
 	border-color: green;
 }
+.catp {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	color: #656565;
+	font-weight: bold;
+}
+.catp:hover {
+	color: green;
+}

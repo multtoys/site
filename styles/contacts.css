@@ -1,19 +1,23 @@
 ﻿/*Только в контактах*/
 h3 {
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	text-align: center;
 	font-size: 120%;
-	color: #00aa00;	
+}
+#contacts table {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+}
+#contacts table td {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	text-align: left;
 }
 #contacts table td:nth-of-type(even) {
-	text-align: left;
-	color: #550055;
 	font-size: 105%;
 	font-style: italic;
+	text-indent: 30px;
 }
 #contacts table td:nth-of-type(odd) {
-	text-align: right;
-	color: #005555;
+	color: #656565;
 	font-size: 125%;
 	text-decoration: underline;
 	font-weight: bold;

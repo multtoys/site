@@ -4,7 +4,19 @@
 	margin: 0;
 }
 .surname {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	color: #656565;
 	font-size: 130%;
-	color: #009900;
 	font-weight: bold;
+	border-radius: 10px 0 0 0;
+}
+.surname, .cloud1, .cloud2 {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+}
+.cloud1 {
+	border-radius: 0 10px 10px 10px;
+}
+.cloud2 {
+	border-radius: 0 0 0 10px;
 }

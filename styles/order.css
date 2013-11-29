@@ -1,9 +1,4 @@
 ﻿/*Только в оформлении заказа*/
-h1 {
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	text-align: center;
-	color: #00aa00;	
-}
 #back {
 	position: fixed;
 	left: 7px;

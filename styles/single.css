@@ -11,24 +11,15 @@
 	border-radius: 10px;
 	margin: 0 5px 5px 0;
 }
-.catp, h1, .bg td {
+.bg td {
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 	color: #656565;
 }
 .catp {
-	font-weight: bold;
 	margin: 0;
 	font-size: 105%;
 }
-.catp:hover {
-	color: green;
-}
-.imgleft {
-	margin: 0 -1px 0 0;
-	border: 10px solid #FDFDFD;
-	border-radius: 10px;
-}
-.imgleft:hover, #big:hover {
+#big:hover {
 	border-color: green;
 }
 
@@ -102,8 +93,6 @@ h1 {
 	font-size: 135%;
 	font-weight: bold;
  }
- 
- 
  
 #item form {
 	text-align: left;

@@ -18,11 +18,5 @@
 .catp {
 	margin: 5px 0;
 	text-indent: 15px;
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	color: #656565;
 	font-size: 130%;
-	font-weight: bold;
-}
-.catp:hover {
-	color: green;
 }

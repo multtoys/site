@@ -1,4 +1,5 @@
 <?php
+$n_item = $_SESSION['items'];
 echo "<td>
 			<a href='order.php' title='Ваша корзина'>
 				<img height='34px' width='34px' src='pictures/busket.png' alt='Корзина' />

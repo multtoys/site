@@ -1,9 +1,10 @@
 		<div id='search'>
 			<form name='search' action='search.php' method='get'>
 				<table width='100%' cellpadding='1px' cellspacing='0' border='0'>
-					<tr valign='middle'><td align='center'><b>Н а й т и :</b></td>
-					<td rowspan='2'><input id='pluto' type='image' name='send' src='pictures/plutorests.png' value='' /></td></tr>
-					<tr valign='middle'><td align='right'><input type='text' name='phrase' value='' size='24' /></td></tr>
+					<tr valign='middle'>
+						<td align='right'><input id='invitation' type='text' name='phrase' value='Напиши, что найти...' size='40' onfocus='erasing()' /></td>
+						<td><input id='pluto' type='image' name='send' src='pictures/plutorests.png' value='' /></td>
+					</tr>
 				</table>
 			</form>
 		</div>
@@ -19,6 +20,10 @@
 			$("#pluto").attr("src", dog);
 		});
 	})
+	
+	function erasing() {
+		if ($("#invitation").attr("value") == "Напиши, что найти...") $("#invitation").attr("value", "");
+	}
 	
 </script>
 

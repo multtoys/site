@@ -1,9 +1,4 @@
 ﻿/*Только во втором уровне каталога*/
-h2 {
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	text-align: center;
-	color: #00aa00;
-} 
 #multlist {
 	float: left;
 	height: 585px;
@@ -17,14 +12,8 @@ h2 {
 	margin: 0 5px 5px 0;
 }
 .catp {
-	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
-	color: #656565;
-	font-weight: bold;
 	margin: 0;
 	font-size: 105%;
-}
-.catp:hover {
-	color: green;
 }
 #multtoys {
 	overflow: hidden;
