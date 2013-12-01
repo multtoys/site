@@ -1,44 +1,48 @@
 ﻿/*Только в оформлении заказа*/
-#back {
-	position: fixed;
-	left: 7px;
-	top: 7px;
-	padding: 1px 7px;
-	background-color: #909090;
-	border: 3px ridge #5A5A5A;
-	border-radius: 10px;
-}
-#back a {
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 120%;
-	font-weight: bold;
-}
 #ord {
-	width: 70%;
 	margin: 0 auto;
 }
-#ord table b {
-	font-size: 150%;
+#ord table {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
 }
-#ord table img {
-	width: 60%;
-}
-#ord table b {
-	font-size: 130%;
+#ord table td {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 }
 .td1 {
-	text-align: left;
-	color: #550055;
 	font-size: 105%;
-	font-style: italic;
+	color: #656565;
 }
-.td2 {
-	text-align: center;
-	color: #005555;
+.td2, .td2 input {
 	font-size: 125%;
-	text-decoration: underline;
+}
+.td2 input {
+text-align: right;
+}
+.td3 {
+	font-size: 140%;
+}
+.td3 span {
+	margin: 0 20px 0 0;
+}
+.td2, .td3 {
 	font-weight: bold;
+}
+#ord a {
+	text-decoration: none;
+	color: inherit;
+	margin: 0 20px 0 0;
+}
+.td2 img {
+	border: 5px solid #FDFDFD;
+	border-radius: 5px;
+}
+.td2 img:hover {
+	border-color: green;
+}
+.dim {
+	margin: 0 0 0 20px;
 }
 #ord input[type='image'] {
 	opacity: 0.4;
