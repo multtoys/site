@@ -1,13 +1,11 @@
 ﻿/*Только в оформлении заказа*/
-#ord {
+.ord {
 	margin: 0 auto;
-}
-#ord table {
 	background-color: #FDFDFD;
 	border: 10px solid #FDFDFD;
 	border-radius: 10px;
 }
-#ord table td {
+.ord table td {
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 }
 .td1 {
@@ -29,7 +27,7 @@ text-align: right;
 .td2, .td3 {
 	font-weight: bold;
 }
-#ord a {
+.ord a {
 	text-decoration: none;
 	color: inherit;
 	margin: 0 20px 0 0;
@@ -42,11 +40,18 @@ text-align: right;
 	border-color: green;
 }
 .dim {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 50px;
 }
-#ord input[type='image'] {
+.ord input[type='text'] {
+	height: 35px;
+}
+.ord input[type='text'], .ord textarea {
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	font-size: 140%;
+}
+.ord input[type='image'] {
 	opacity: 0.4;
 }
-#ord input[type='image']:hover {
+.ord input[type='image']:hover {
 	opacity: 1.0;
 }

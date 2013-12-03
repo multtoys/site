@@ -2,30 +2,14 @@
 			<form name='search' action='search.php' method='get'>
 				<table width='100%' cellpadding='1px' cellspacing='0' border='0'>
 					<tr valign='middle'>
-						<td align='right'><input id='invitation' type='text' name='phrase' value='Напиши, что найти...' size='40' onfocus='erasing()' /></td>
+						<td align='right'><input id='invitation' type='text' name='phrase' value='Напиши, что найти...' size='30' onfocus='erasing()' /></td>
 						<td><input id='pluto' type='image' name='send' src='pictures/plutorests.png' value='' /></td>
 					</tr>
 				</table>
 			</form>
 		</div>
 
-<script type='text/javascript'>
-
-	$(document).ready(function() {
-
-		var dog = $("#pluto").attr("src");
-		$("#pluto").mouseover(function(){
-			$("#pluto").attr("src", "pictures/plutoserves.png");
-		}).mouseout(function(){
-			$("#pluto").attr("src", dog);
-		});
-	})
-	
-	function erasing() {
-		if ($("#invitation").attr("value") == "Напиши, что найти...") $("#invitation").attr("value", "");
-	}
-	
-</script>
+<script type='text/javascript' src='js/home.js'></script>
 
 		<div id='greeting'> <!-- Приветствие и наша зазывалка  -->
 			<h1><span>सूर्य नमस्कार</span>  (Сурья намаскар) - Приветствие солнцу</h1>
@@ -53,35 +37,3 @@
 				<td><a href='catalogue-next.php'><img width='228' height='171' src='pictures/cartoonsbig/winie-ostap.png' title='Золотой телёнок - 2' alt='ostap bender' /></a></td>
 			</tr>
 		</table>
-		
-<script type='text/javascript'>
-	$(document).ready(function() {
-		var woj = 260;
-		var wog;
-		var cols;
-		$("#goods").mouseover(mults);
-		
-		function mults() {
-			cols = $("#first td").length;
-			wog = $("#footer").width() * 0.9;
-			if (((wog / woj) < 3) && (cols == 3)) reducetable();
-			if (((wog / woj) >= 3) && (cols != 3))increasetable();
-		}
-		
-		function reducetable() {
-			$("#goods").append("<tr id='lastrow'></tr>");
-			$("#first td").eq(2).clone(true).appendTo("#lastrow");
-			$("#second td").eq(2).clone(true).appendTo("#lastrow");
-			$("#first td").eq(2).remove();
-			$("#second td").eq(2).remove();
-		}
-
-		function increasetable() {
-			$("#lastrow td").eq(0).clone(true).appendTo("#first");
-			$("#lastrow td").eq(1).clone(true).appendTo("#second");
-			$("#lastrow td").eq(0).remove();
-			$("#lastrow td").eq(1).remove();
-			$("#lastrow").remove();
-		}
-	})
-</script>

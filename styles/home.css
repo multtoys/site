@@ -1,7 +1,16 @@
 ﻿/*Только на главной*/
 #search {
 	float: right;
-	width: 335px;
+	padding: 0 10px;
+	background-color: #9ADD8D;
+	border: 1px solid #9ADD8D;
+	border-radius: 10px;
+}
+#invitation {
+	height: 35px;
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	font-size: 140%;
+	background-color: #D5FFBE;
 }
 #pluto {
 	width: 60px;
@@ -12,8 +21,8 @@
 
 /*Всё приветствие будет полностью переделываться, естественно...*/
 		#greeting  {
-			width: 70%;
 			text-align: center;
+			clear: both;
 		}
 		#greeting p {
 			display: block;

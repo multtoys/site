@@ -61,32 +61,7 @@
 			</table>
 		</div>
 			
-<script type='text/javascript'>
-	$(document).ready(function() {
-		var imgnum = $("#toynails a").length;
-		var wogap = $("#gap").width();
-		var visnum = (wogap - (wogap % 70)) / 70;
-		
-		$("#arrowright").click(shiftleft);
-		$("#arrowleft").click(shiftright);
-
-		function shiftleft() {
-			if (imgnum > visnum) {
-				$("#toynails a:first").clone(true).appendTo("#toynails");
-				$("#toynails a:first").remove();
-				$("#toynails img:last").css("margin", "0");
-			}
-		}
-
-		function shiftright() {
-			if (imgnum > visnum) {
-				$("#toynails a:last").clone(true).prependTo("#toynails");
-				$("#toynails a:last").remove();
-				$("#toynails img:first").css("margin", "0");
-			}
-		}
-	})
-</script>
+<script type='text/javascript' src='js/changer.js'></script>
 		
 		<div id='item'>
 			<h1>Игрушка № 1</h1>
@@ -131,24 +106,7 @@
 			</table>
 			<br />
 			
-<script type='text/javascript'>
-	
-	function change(id) {
-			var sight = $(id);
-			var smallpic = sight.attr("src");
-			var bigpic = $("#big").attr("src");
-			var rexp = /[^\/]*$/;
-			smallpic = smallpic.match(rexp); 
-			bigpic = bigpic.match(rexp); 
-				if (smallpic != bigpic) {
-					var newsrc = "pictures/toysbig/" + smallpic;
-					$("#big").attr("src", newsrc);
-					$("#small img").addClass("dim");
-					sight.removeClass("dim");
-				}
-		}
-
-</script>
+<script type='text/javascript' src='js/sights.js'></script>
 			
 			<form name='to_cart' action='toyitem.php' method='get'>
 				<input type='submit' name='add' value='Добавить в корзину 1 штуку' />

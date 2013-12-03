@@ -2,12 +2,16 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #B3FFB3;
+	background-color: #B3FFA5;
 }
 h1, h2, h3, h4 {
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 	text-align: center;
 	color: #656565;
+}
+div p:first-of-type::first-letter {
+	color: red;
+	font-size: 160%;
 }
 
 #overheader {
@@ -51,8 +55,8 @@ img{
 
 #header, #footer {
 	margin: 7px auto;
-	background-color: #9ADD9A;
-	border: 1px solid #9ADD9A;
+	background-color: #9ADD8D;
+	border: 1px solid #9ADD8D;
 	border-radius: 10px;
 }
 #header img {
@@ -60,7 +64,7 @@ img{
 	margin: 3px 0;
 }
 #header td {
-	border: 1px solid #9ADD9A;
+	border: 1px solid #9ADD8D;
 	border-radius: 10px;
 }
 #header td:hover  {

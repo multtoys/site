@@ -1,8 +1,7 @@
-﻿	<div id='ord'> <!-- Оформление заказа -->
-		<h2>Оформление заказа</h2>
-
-		<form name='ordering' action='order-proceed.php' method='post'>
-			<table id='dtls' cellpadding='2px' cellspacing='0' frame='border' align='center'>
+﻿	<h2>Оформление заказа</h2>
+	<form name='ordering' action='order-proceed.php' method='post'>
+		<div class='ord'> <!-- Оформление заказа -->
+			<table id='dtls' cellpadding='2px' cellspacing='0' border='0' align='center'>
 				<tr>
 					<td class='td3' colspan='5' align='center'>Вы собираетесь заказать</td>
 				</tr>
@@ -18,21 +17,21 @@
 					<td class='td1'><a href='toyitem.php'>Игрушка № 27</a></td>
 					<td class='td2' align='center'><input type='text' name='num2' value='3' size='1' /> шт.</td>
 					<td class='td2' align='right'>700 руб.</td>
-					<td align='right'><img class='dim' src='pictures/expl.png' height='34px' width='34px' title='Удалить' alt='Explode' onclick='deltoy("#27")' /></td>
+					<td align='right'><img class='dim' src='pictures/bomb.png' height='34px' width='34px' title='Удалить' alt='Bomb' onclick='deltoy("#27")' /></td>
 				</tr>
 				<tr id='38'>
 					<td class='td2'><a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic38.jpg' alt='Рис 38' /></a></td>
 					<td class='td1'><a href='toyitem.php'>Игрушка № 38</a></td>
 					<td class='td2' align='center'><input type='text' name='num2' value='1' size='1' /> шт.</td>
 					<td class='td2' align='right'>400 руб.</td>
-					<td align='right'><img class='dim' src='pictures/expl.png' height='34px' width='34px' title='Удалить' alt='Explode' onclick='deltoy("#38")' /></td>
+					<td align='right'><img class='dim' src='pictures/cut.png' height='34px' width='34px' title='Удалить' alt='Cutter' onclick='deltoy("#38")' /></td>
 				</tr>
 				<tr id='3'>
 					<td class='td2'><a href='toyitem.php'><img height='70px' width='70px' src='pictures/toyssmall/pic3.jpg' alt='Рис 3' /></a></td>
 					<td class='td1'><a href='toyitem.php'>Игрушка № 3</a></td>
 					<td class='td2' align='center'><input type='text' name='num2' value='4' size='1' /> шт.</td>
 					<td class='td2' align='right'>300 руб.</td>
-					<td align='right'><img class='dim' src='pictures/expl.png' height='34px' width='34px' title='Удалить' alt='Explode' onclick='deltoy("#3")' /></td>
+					<td align='right'><img class='dim' src='pictures/hang.png' height='34px' width='34px' title='Удалить' alt='Hanger' onclick='deltoy("#3")' /></td>
 				</tr>
 				<tr class='td3'>
 					<td colspan='3' align='right'><span>Итого</span></td>
@@ -40,32 +39,13 @@
 					<td align='right'><img class='dim' src='pictures/calc.png' height='34px' width='34px' title='Пересчитать' alt='Calc' onclick='recalc()' /></td>
 				</tr>
 			</table>
+		</div>
 				
-<script type='text/javascript'>
-
-	function deltoy(toy) {
-		var line = $(toy);
-		line.hide(500, function() {line.remove();});
-	}
-	
-	function recalc() {
-		var maxn = $("#dtls input").size();
-		var price;
-		var quant;
-		var t;
-		var amount = 0;
-		for (var i = 0; i < maxn; i++) {
-			quant = $("#dtls input").eq(i).val();
-			t = $("#dtls td").eq(5*i+4).text();
-			price = parseFloat(t);
-			amount = amount + quant*price;
-		}
-		$("#dtls td").eq(maxn*5+2).text(amount + " руб.")
-	}
-</script>
+<script type='text/javascript' src='js/ordering.js'></script>
 				
 			<br />
-			<table cellpadding='5px' cellspacing='0' frame='border'  align='center'>
+		<div class='ord'> <!-- Продолжение оформления заказа -->
+			<table cellpadding='5px' cellspacing='0' border='0' align='center'>
 				<tr>
 					<td class='td3' colspan='2' align='center'>Информация в службу доставки</td>
 				</tr>
@@ -99,6 +79,6 @@
 					</td>
 				</tr>
 			</table>
-		</form>
-		<br /><br />
-	</div>
+		</div>
+	</form>
+	<br /><br />
