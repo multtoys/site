@@ -3,6 +3,23 @@
 
 <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
 <script type='text/javascript' src='js/sldr.js'></script>
+<script type='text/javascript'>
+	function ship() {
+		var veil = "<div id='veil' style='width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100; background-color: grey; opacity: 0.7;'></div>";
+		var dazibao = "<div id='dazibao' style='width: 60%; height: 60%; max-width: 700px; max-height: 400px; min-width: 200px; overflow: auto; margin: auto; position: fixed; top: 0; left: 0; bottom: 0; right: 0;; z-index: 101; background-color: #FDFDFD; border: 10px solid #FDFDFD; border-radius: 10px; opacity: 1;'></div>";
+		var dlvr = "<h2>Доставка:</h2><div id='dlvr'><p>Подробное описание способов доставки</p><p>Стоимости доставки</p><p>Сроков доставки</p><p>И пр.</p></div>";
+		var btn = "<img class='dim' src='pictures/exit.png' width='70px' height='70px' title='Закрыть окно' alt='exit' style='position: absolute; top: 0; right: 0; margin: 1px;' onclick='out()' />";
+		$("body").prepend(veil);
+		$("body").prepend(dazibao);
+		$("#dazibao").prepend(dlvr);
+		$("#dazibao").prepend(btn);
+	}
+
+	function out() {
+		$("#veil").remove();
+		$("#dazibao").remove();
+	}
+</script>
 
 	<div id='overheader'>
 		<div id='wndw'>
@@ -47,6 +64,6 @@
 				<tr align='center'>
 					<td><a href='index.php' title='Идём домой'><img height='34px' width='34px' src='pictures/home.png' alt='Домашняя страничка' /></a></td>
 					<td><a href='catalogue.php' class='menu'>КАТАЛОГ</a></td>
-					<td><a href='delivery.php' class='menu'>О ДОСТАВКЕ</a></td>
+					<td><span class='menu' onclick='ship()'>О ДОСТАВКЕ</span></td>
 					<td><a href='comments.php' class='menu'>ОТЗЫВЫ</a></td>
 					<td><a href='contacts.php' class='menu'>КОНТАКТЫ</a></td>				
