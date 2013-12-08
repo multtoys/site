@@ -67,7 +67,7 @@ img{
 	border: 1px solid #9ADD8D;
 	border-radius: 10px;
 }
-#header td:hover  {
+#header td:hover, .activemenu  {
 	background-color: #77BB77;
 	border: 1px solid #77BB77;
 	border-radius: 10px;
