@@ -3,6 +3,7 @@
 	float: left;
 	height: 585px;
 	overflow: auto;
+	width: 176px;
 }
 #multlist div {
 	text-align: center;

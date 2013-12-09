@@ -1,6 +1,9 @@
 	function deltoy(toy) {
 		var line = $(toy);
-		line.hide(500, function() {line.remove();});
+		line.hide(500, function() {
+			line.remove();
+			recalc();
+		});
 	}
 	
 	function recalc() {

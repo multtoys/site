@@ -62,7 +62,8 @@
 		</div>
 			
 <script type='text/javascript' src='js/changer.js'></script>
-		
+<script type='text/javascript' src='js/sights.js'></script>
+			
 		<div id='item'>
 			<h1>Игрушка № 1</h1>
 			<table border='0' cellspacing='0' cellpadding='3px' align='center'>
@@ -103,12 +104,9 @@
 					<td>Происхождение:</td>
 					<td id='bottomright'>Китай</td>
 				</tr>
-			</table>
-			<br />
-			
-<script type='text/javascript' src='js/sights.js'></script>
-			
-			<form name='to_cart' action='toyitem.php' method='get'>
-				<input type='submit' name='add' value='Добавить в корзину 1 штуку' />
-			</form>
-			<br />
+				<tr>
+					<td colspan='2'>
+						<form name='to_cart' action='toyitem.php' method='get'>
+							<input type='image' src='pictures/add_button.png' name='add' />
+						</form>
+					</td>

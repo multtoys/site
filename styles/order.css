@@ -39,7 +39,7 @@ text-align: right;
 .td2 img:hover {
 	border-color: green;
 }
-.dim {
+.dim, #calc {
 	margin: 0 0 0 50px;
 }
 .ord input[type='text'] {
@@ -54,4 +54,7 @@ text-align: right;
 }
 .ord input[type='image']:hover {
 	opacity: 1.0;
+}
+#calc {
+	cursor: pointer;
 }
