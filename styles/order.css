@@ -49,12 +49,6 @@ text-align: right;
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 	font-size: 140%;
 }
-.ord input[type='image'] {
-	opacity: 0.4;
-}
-.ord input[type='image']:hover {
-	opacity: 1.0;
-}
-#calc {
+.ord img:hover, #calc {
 	cursor: pointer;
 }

@@ -14,6 +14,7 @@ class Config {
 	public $password_mapp = 'root';
 	public $admin_name = 'Stoyan';
 	public $admin_email = 'stoyan.k-n@yandex.ru';
+	public $dir_text = "classes/text/";
 	
 	public $min_phone = 15;
 	public $max_phone = 17;
