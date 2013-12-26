@@ -28,7 +28,7 @@ else {
 }
 
 echo "<td>
-			<a href='order.php' title='Ваша корзина'><img height='34px' width='34px' src='pictures/busket.png' alt='Корзина' /></a>
+			<a href='order.php' title='Ваша корзина'><img height='34px' width='34px' src='pictures/basket.png' alt='Корзина' /></a>
 			<a id='inmenu' href='order.php' title='Ваша корзина'>
 				<span>В корзине <b>$n_item</b> игруш$suff</span>
 			</a>

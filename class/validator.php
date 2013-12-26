@@ -34,7 +34,7 @@ class Validator {
 	}
 	
 	public function validHash($hash_md5) {
-		if (!$this->validString($hash_md5, 32, 32)) return false;
+		if (!$this->validString($hash_md5, 32, 32)) return false;		// эта строчка нужна???
 		if (!preg_match("~^[a-z0-9]{32}$~i", $hash_md5)) return false;
 		return true;
 	}

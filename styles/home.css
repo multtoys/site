@@ -7,6 +7,7 @@
 	border-radius: 10px;
 }
 #invitation {
+	padding: 0 0 0 5px;
 	height: 35px;
 	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
 	font-size: 140%;

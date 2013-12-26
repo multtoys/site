@@ -2,7 +2,7 @@
 require_once "config.php";
 require_once "validator.php";
 
-class DataBase {
+class DbRover {
 
 	private $config;
 	private $connect;
@@ -154,14 +154,17 @@ class DataBase {
 //получение информации из записи, если известно значение другого поля в этой записи
 	public function receiveData($table_name, $output, $inputfield, $inputvalue) {
 		$result = $this->choice($table_name, array($output), "`".$inputfield."`='".addslashes($inputvalue)."'");
-		if (count($result) != 1) return false;
-		return $result[0][$output];
+		if (count($result) < 1) return false;
+		$output_arr = array();
+		for ($i = 0; $i < count($result); $i++) $output_arr[$i] = $result[$i][$output];
+		return $output_arr;
 	}
 
 //получение информации из записи по ID этой записи
 	public function receiveDataViaId($table_name, $output, $id) {
 		if (!$this->existId($table_name, $id)) return false;
-		return $this->receiveData($table_name, $output, "`ID`='".$id."'");
+		$arr = $this->receiveData($table_name, $output, "`ID`='".$id."'");
+		return $arr[0];
 }
 
 //получение всей записи по ID этой записи

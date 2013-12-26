@@ -1,0 +1,56 @@
+﻿/*Только в результатах поиска*/
+#search {
+	float: right;
+	padding: 0 10px;
+	background-color: #9ADD8D;
+	border: 1px solid #9ADD8D;
+	border-radius: 10px;
+	margin-bottom: 7px;
+}
+#invitation {
+	padding: 0 0 0 5px;
+	height: 35px;
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	font-size: 140%;
+	background-color: #D5FFBE;
+}
+#pluto {
+	width: 60px;
+	height: 60px;
+	vertical-align: bottom;
+}
+
+#result {
+	background-color: #FDFDFD;
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+	font-family: 'Comic Sans MS', Verdana, 'Lucida Sans Unicode';
+	clear: both;
+}
+#result tr {
+	height: 105px;
+}
+#result td {
+	text-align: center;
+	padding: 6px;
+}
+#result td span {
+	color: #CC3399;
+	font-weight: bold;
+}
+#result img {
+	border: 10px solid #FDFDFD;
+	border-radius: 10px;
+	margin: 0;
+}
+#result img:hover {
+	border-color: green;
+}
+#result p {
+	color: #656565;
+	font-weight: bold;
+	display: inline;
+}
+#result p:hover {
+	color: green;
+}
